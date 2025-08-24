@@ -11,9 +11,10 @@ else:
 
 # using Ternary operator
 
-num1,num2=10,20
+
 
 result=num1 if num1>num2 else num2
+print(result)
 
 
 
@@ -22,3 +23,6 @@ result=num1 if num1>num2 else num2
 
 list=[20,30]
 print(max(list))
+
+
+print(max(num1,num2))
