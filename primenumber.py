@@ -25,15 +25,56 @@ else:
 
 flag=0
 
-for l in range(2,round(math.sqrt(x))):
 
-    if l>6 and x%l==0:
+""" for l in range(2,round((x/2))+1):
+
+    if x%l==0:
         flag=1
         break
+   
 if flag==1:
     print("Not Prime")
 else:
-    print("Prime")
-    
+    print("Prime") """
 
-       
+
+
+
+""" if x<=3:
+    flag=0
+
+else:
+    for m in range(2,int(math.sqrt(x))+1):
+        if  x%m==0:
+            flag=1
+            break
+
+
+if flag==1:
+    print("Not Prime")
+else:
+    print("Prime")    
+ """
+
+
+
+""" if x<=3:
+    flag=0
+else:
+    if x%2==0:
+        flag=1
+    else:
+        for n in range(2,int(math.sqrt(x))+1,2):
+            if  x%n==0:
+                flag=1
+                break
+        
+
+if flag==1:
+    print("Not Prime")
+else:
+    print("Prime")   """  
+
+
+
+
