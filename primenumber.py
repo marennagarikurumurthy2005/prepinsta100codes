@@ -76,5 +76,18 @@ else:
     print("Prime")   """  
 
 
+iter=2
 
+def is_recusion(num,iter):
+    if num==iter:
+        return True
+    if num%iter==0:
+        return False
+    if num<iter:
+        return False
+    is_recusion(num,iter+1)
+if is_recusion(x,iter)==True:
+    print("Prime")
+else:
+    print("Not prime")    
 
