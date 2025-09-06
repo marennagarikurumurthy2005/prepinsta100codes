@@ -64,7 +64,18 @@ num="12345"
 result=add_sum(num)
 print(result)
  """
+""" 
+num="12345"
+cleaned=num.strip()
+numbers=list(map(int,cleaned.strip()))
+print(sum(numbers))
+ """
 
 
+""" 
+def sum(num): return 0 if num==0 else  num%10+sum(int(num/10))
+print(sum(1234))
+
+ """
 
 
