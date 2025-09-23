@@ -93,6 +93,83 @@ print("Even",even,"Odd",odd) """
 
 
 
+#Check any number is prime number or not
+
+""" num=13
+flag=0
+for i in range(2,num):
+    if num%i==0:
+        flag=1
+        break
+    else:
+        flag=0
+if flag==0:
+    print(num,"is prime")
+else:
+    print(num,"Not prime") """
+
+#Print vowels in a string and count them
+ # type 1
+""" vowels=['a','e','i','o','u','A','E','I','O','U']
+word="ammabangarthalli"
+total_vowels=[]
+vowels_count=0
+for i in word:
+    if i in vowels:
+        total_vowels.append(i)
+        vowels_count+=1
+print(total_vowels,vowels_count) """
+
+ # type 2
+
+""" vowels=['a','e','i','o','u','A','E','I','O','U']
+word="ammabangarthalli"
+total_vowels=[]
+vowels_count=0
+for i in word:
+    if i in vowels:
+            if i not in total_vowels:
+                total_vowels.append(i)
+                vowels_count+=1
+print(total_vowels,vowels_count) """
+
+
+
+# Type 3 
+
+""" vowels=['a','e','i','o','u','A','E','I','O','U']
+word="ammabangarthalli"
+total_vowels=[]
+vowels_count=0
+for i in word:
+    if i in vowels:
+            if i not in total_vowels:
+                total_vowels.append(i)
+            vowels_count+=1
+print(total_vowels,vowels_count) """
+
+
+# Palindrome on name
+     # method 1
+
+     
+""" data5="madam"
+rev_data5=data5[::-1]
+if data5==rev_data5:
+    print(data5,"is a palindrome")
+else:
+    print(data5,"not a palindrome") """
+
+
+            # method 2
+
+""" data=''
+
+for i in range(1,len(data5)+1):
+    data=data+(data5[-i])
+print(data) """
+
+
 
 
 
