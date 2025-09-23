@@ -79,6 +79,19 @@ print(rev_num)
 print(type(rev_num)) """
 
 
+#Print 1 to 20 even number and odd numbers
+
+""" even=[]
+odd=[]
+for i in range(1,20):
+    if i%2==0:
+        even.append(i)
+    else:
+        odd.append(i)
+
+print("Even",even,"Odd",odd) """
+
+
 
 
 
