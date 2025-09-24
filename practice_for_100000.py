@@ -17,7 +17,7 @@ print(rev_data1) """
 #Counting vowels in give word
 
 """ vowels=['a','e','i','o','u','A','E','I','O','U']
-data2="revathi"
+data2="anyname"
 count=0
 for i in data2:
     if i in vowels:
