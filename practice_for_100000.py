@@ -170,12 +170,58 @@ for i in range(1,len(data5)+1):
 print(data) """
 
 
+#Find wide spaces between string And Remove spaces between string
+   #method 1
+""" word="Im Kurumurthy Marennagari and i like her"
+for ch in word:
+    if ch!=" ":
+        print(ch,end="") """
+
+    # method 2
+
+""" count=0
+index_place=[]
+word="Im     Kurumurthy        Marennagari       and i    like her"
+for i in range(len(word)-1):
+    if word[i]==" " and word[i+1]==" ":
+        count+=1
+        index_place.append(i)
+        pass
+    else:
+        print(word[i],end='')
+
+print("\n" ,count)
+print(index_place) """
+
+# Factorial of a given number
+    #method 1
+""" def is_factorial(num):
+    if num==0:
+        return 1
+    else:
+        return num*is_factorial(num-1)
+result=is_factorial(5)
+print(result) """
+ 
+
+   #method2
+
+""" num=5
+if num==0:
+    print("factorial of 0 is 1")
+else:
+    result=1
+    for i in range(1,num+1):
+        result=result*i
+print(result) """
 
 
+# Converting list into string Ex python
 
-
-
-   
-
-
+""" data3=['p','y','t']
+result=""
+for i in data3:
+    result=result+i
+print(result)
+print(type(result)) """
 
