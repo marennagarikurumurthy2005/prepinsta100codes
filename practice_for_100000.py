@@ -225,3 +225,28 @@ for i in data3:
 print(result)
 print(type(result)) """
 
+#  Compare 3 numbers without using logical operators.
+
+
+ # method 1
+
+num1=100
+num2=222
+num3=30
+
+
+
+if num1<num2:
+    if num1<num3:
+        print(num1,"num1 is smaller")
+    else:
+        print(num3,"num3 is smallar")
+else:
+    if num2<num3:
+        print(num2,"num2 is smaller")
+    else:
+        print(num3," num3 is smallar")
+
+
+
+        
