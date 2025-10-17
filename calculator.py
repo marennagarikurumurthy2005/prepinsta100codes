@@ -19,32 +19,40 @@ def calculation(num1,op,num2):
         return num1**num2
     elif op=='%':
         return num1%num2
-        
-    
-    
     else:
         return "something went wrong"
+    
+    
+
+flag=1
+while flag==1:
+
+      
+    quitmsg=input(f"Do you want to continue calculations:( Y/N )->")
 
 
+    if quitmsg=='y' or quitmsg=='Y':
+        input1=int(input("Enter Number 1 ->"))
+        operator=input("enter the operator to do operation: \n addition \t (+) \n substraction  \t (-) \n multiplication (* or X) \n division  \t (/) \n power \t \t (** or ^) \n modulus \t (%) \n Enter your choice:")
+
+        arithmetic_operators = ['+', '-', '*', '/', '%', '**',]
 
 
-input1=int(input("Enter Number 1 ->"))
-operator=input("enter the operator to do operation: \n addition \t (+) \n substraction  \t (-) \n multiplication (* or X) \n division  \t (/) \n power \t \t (** or ^) \n modulus \t (%) \n Enter your choice:")
+        if operator in arithmetic_operators:
 
-arithmetic_operators = ['+', '-', '*', '/', '%', '**',]
+            if operator=='**' or operator=='^':
+                input2=int(input("Enter power ->"))
+            else:
+                input2=int(input("Enter numbe ->:"))
+            cal=calculation(input1,operator,input2)
+            print("Result",cal)
 
-
-if operator in arithmetic_operators:
-
-    if operator=='**' or operator=='^':
-        input2=int(input("Enter power ->"))
+        else:
+            print("please enter correct operator ")
     else:
-        input2=int(input("Enter numbe ->:"))
-    cal=calculation(input1,operator,input2)
-    print("Result",cal)
+        print("Calculator closed, Thank You")
+        flag=0
 
-else:
-    print("please enter correct operator ")
     
 
 
