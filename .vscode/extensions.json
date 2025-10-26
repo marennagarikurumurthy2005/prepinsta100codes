@@ -1,6 +1,8 @@
 {
     "recommendations": [
         "esbenp.prettier-vscode",
-        "hediet.debug-visualizer"
+        "hediet.debug-visualizer",
+        "bradlc.vscode-tailwindcss",
+        "numso.vscode-tailwindcss-with-hex-colors"
     ]
 }
